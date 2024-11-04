@@ -1,0 +1,74 @@
+{
+    "sections": [
+      {
+        "id": "header1",
+        "type": "header",
+        "title": "",
+        "profileSummary": "Professional Software Developer with over 7 years of experience in building scalable web applications and services.",
+        "location": "New York, USA",
+        "socialLinks": [
+          { "platform": "LinkedIn", "url": "linkedin.com/in/johndoe", "icon": "linkedin-icon.png" },
+          { "platform": "GitHub", "url": "github.com/johndoe", "icon": "github-icon.png" }
+        ],
+        "icon": "profile-icon.png"
+      },
+      {
+        "id": "skills1",
+        "type": "skills",
+        "category": "Frontend Development",
+        "skills": [
+          { "name": "React", "icon": "react-icon.png" },
+          { "name": "TypeScript", "icon": "typescript-icon.png" },
+          { "name": "HTML5", "icon": "html5-icon.png" },
+          { "name": "CSS3", "icon": "css3-icon.png" }
+        ],
+        "icon": "frontend-icon.png"
+      },
+      {
+        "id": "skills2",
+        "type": "skills",
+        "category": "Backend Development",
+        "skills": [
+          { "name": "Node.js", "icon": "nodejs-icon.png" },
+          { "name": "Python", "icon": "python-icon.png" },
+          { "name": "PostgreSQL", "icon": "postgresql-icon.png" }
+        ],
+        "icon": "backend-icon.png"
+      },
+      {
+        "id": "experience1",
+        "type": "experience",
+        "companyName": "Tech Corp",
+        "position": "Senior Developer",
+        "startDate": "2020-01-01",
+        "endDate": "Present",
+        "description": "Leading frontend development team for various projects involving modern web technologies.",
+        "icon": "techcorp-icon.png"
+      },
+      {
+        "id": "education1",
+        "type": "education",
+        "degree": "Bachelor's Degree in Computer Science",
+        "institution": "University of Technology",
+        "startDate": "2012-09-01",
+        "endDate": "2016-06-30",
+        "gpa": "3.8",
+        "icon": "university-icon.png"
+      },
+      {
+        "id": "project1",
+        "type": "projects",
+        "title": "E-commerce Platform",
+        "description": "Developed a full-stack e-commerce application with payment gateway integration and user authentication.",
+        "technologies": [
+          { "name": "React", "icon": "react-icon.png" },
+          { "name": "Node.js", "icon": "nodejs-icon.png" },
+          { "name": "MongoDB", "icon": "mongodb-icon.png" }
+        ],
+        "startDate": "2019-05-01",
+        "endDate": "2019-12-31",
+        "icon": "ecommerce-icon.png"
+      }
+    ]
+  }
+  

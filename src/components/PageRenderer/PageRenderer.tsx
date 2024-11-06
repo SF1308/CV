@@ -31,11 +31,10 @@ export const PageRenderer: React.FC<PageRendererProps> = ({ schema }) => {
       console.warn(`No component found for section type: ${section.type}`)
       return null
     }
-
     return (
       <SectionWrapper key={section.id} title={section.title}>
         <Suspense fallback={<Loader />}>
-          <Component {...section.content} />
+          <Component {...section} />
         </Suspense>
       </SectionWrapper>
     )

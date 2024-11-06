@@ -1,39 +1,30 @@
 import React from 'react'
 import HeaderStyles from './styles'
 import { HeaderContent } from '../../types/schema'
+import { ContactInfo as ContactInfoComponent } from './components/ContactInfo'
 
 
-const { HeaderContainer, Name, Title, ContactInfo, ContactItem } = HeaderStyles
+const { HeaderContainer, Name, Title } = HeaderStyles
 
-export const Header: React.FC<HeaderContent> = ({ 
-    title = '',
-    profileSummary = '',
-    location = '',
-    socialLinks = [],
-    icon = ''
-  }) => 
-      <HeaderContainer>
+export const Header: React.FC<HeaderContent> = ({
+  title = '',
+  profileSummary = '',
+  name = '',
+  location = '',
+  socialLinks = [],
+}) => {
 
-        <Title>{title}</Title>
-        <ContactInfo>
-          {profileSummary && (
-            <ContactItem>
-              {profileSummary}
-            </ContactItem>
-          )}
-          {location && (
-            <ContactItem>
-              {location}
-            </ContactItem>
-          )}
-          {socialLinks.map((link) => (
-            <ContactItem key={link.platform}>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.platform}
-              </a>
-            </ContactItem>
-          ))}
-        </ContactInfo>
-      </HeaderContainer>
+  return (<HeaderContainer>
+
+    <Title>{title}</Title>
+    <Name>{name}</Name>
+      {profileSummary && (
+        <div>
+          {profileSummary}
+        </div>
+      )}
+    <ContactInfoComponent location={location} socialLinks={socialLinks} />
+  </HeaderContainer>)
+}
 
 

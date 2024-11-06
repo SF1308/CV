@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme'
 
 const HeaderStyles = {
-  HeaderContainer: styled.header`
+  HeaderContainer: styled.div`
     display: flex;
     flex-direction: column;
     gap: ${ theme.spacing.small};
@@ -24,6 +24,7 @@ const HeaderStyles = {
     display: flex;
     gap: ${  theme.spacing.medium};
     flex-wrap: wrap;
+    flex-direction: column;
   `,
 
   ContactItem: styled.span`

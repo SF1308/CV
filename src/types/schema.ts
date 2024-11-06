@@ -4,6 +4,7 @@ export type SectionType = 'header' | 'skills' | 'experience' | 'education' | 'pr
 // Interfaces for the specific content of each section type
 export interface HeaderContent {
     title: string;
+    name: string;
     profileSummary: string;
     location: string;
     socialLinks: Array<{
